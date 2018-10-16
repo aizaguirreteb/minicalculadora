@@ -15,10 +15,15 @@ Algoritmo minicalculadora
   Sino
       Si opcion = 2 entonces
          num_res = num_a - num_b
-         Escribir "La resta de ", num_a," y de ", num_b," es de ",num_res
+         Escribir "La resta de " num_a" y de " num_b" es de "num_res
       Sino
+	Si opcion = 3 entonces
+	   num_res = num_a * num_b
+	   Escribir "La multiplicación de los números es " num_res
+	sino
          Escribir "Esa operación no esta permitida"
-     Finsi
- Finsi
+	FinSi
+      FinSi
+ FinSi
 FinAlgoritmo
   
