@@ -6,7 +6,7 @@ Algoritmo minicalculadora
   leer num_a
   Escribir "Introducir numero b"
   leer num_b
-  Escribir "Introducir 1(suma), 2(resta)"
+  Escribir "Introducir 1(suma), 2(resta), 3(multiplicación)"
   leer opcion
   
   Si opcion = 1 entonces
@@ -21,9 +21,15 @@ Algoritmo minicalculadora
 	   num_res = num_a * num_b
 	   Escribir "La multiplicación de los números es " num_res
 	sino
-         Escribir "Esa operación no esta permitida"
-	FinSi
+	   Si opcion = 4 entonces
+		Si num_b != 0 entonces
+			num_res = num_a/num_b
+		FinSi
+	   Sino	
+         	Escribir "Esa operación no esta permitida"
+	   FinSi
+        FinSi
       FinSi
- FinSi
+  FinSi
 FinAlgoritmo
   
